@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "jumpreset-notifier",
+	"version": "${version}",
+	"name": "JumpReset Notifier",
+	"description": "A mod that displays how far you were from doing a perfect jump reset",
+	"authors": [
+		"vpb_"
+	],
+	"license": "MIT",
+	"icon": "assets/jumpreset-notifier/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"ru.vpb.jumpresetnotifier.JumpResetNotifier"
+		]
+	},
+	"mixins": [
+		"jumpreset-notifier.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.0",
+		"minecraft": "~1.21",
+		"java": ">=21"
+	}
+}
